@@ -1,17 +1,47 @@
-# Node Express template project
+# PDV - Ponto de Venda
 
-This project is based on a GitLab [Project Template](https://docs.gitlab.com/ee/user/project/#create-a-project-from-a-built-in-template).
+Este é um sistema de Ponto de Venda (PDV) desenvolvido com Node.js (backend), React.js (frontend) e PostgreSQL (banco de dados).
 
-Improvements can be proposed in the [original project](https://gitlab.com/gitlab-org/project-templates/express).
+## Pré-requisitos
 
-## CI/CD with Auto DevOps
+- Node.js (v18 ou superior)
+- npm (v9 ou superior)
+- PostgreSQL (v14 ou superior)
 
-This template is compatible with [Auto DevOps](https://docs.gitlab.com/ee/topics/autodevops/).
+1. Instalação do Node.js e npm
+O Node.js é necessário para executar o backend (Node.js + Express.js) e o frontend (React.js).
 
-If Auto DevOps is not already enabled for this project, you can [turn it on](https://docs.gitlab.com/ee/topics/autodevops/#enable-or-disable-auto-devops) in the project settings.
+No Ubuntu:
+Abra o terminal.
 
-### Developing with Gitpod
+Instale o Node.js e o npm:
 
-This template has a fully-automated dev setup for [Gitpod](https://docs.gitlab.com/ee/integration/gitpod.html).
+sudo apt update
+sudo apt install nodejs npm
 
-If you open this project in Gitpod, you'll get all Node dependencies pre-installed.
+Verifique a instalação:
+node -v
+npm -v
+
+No Windows:
+Baixe o instalador do Node.js no site oficial: https://nodejs.org/.
+
+Siga as instruções do instalador.
+
+Verifique a instalação no Prompt de Comando:
+
+node -v
+npm -v
+
+Instalação do PostgreSQL
+O PostgreSQL será o banco de dados do projeto.
+
+No Ubuntu:
+Instale o PostgreSQL:
+
+sudo apt update
+sudo apt install postgresql postgresql-contrib
+
+Inicie o serviço do PostgreSQL:
+
+sudo service postgresql start
